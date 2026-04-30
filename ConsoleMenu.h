@@ -9,6 +9,8 @@ struct MenuItem
 {
 	std::string text;
 	int16_t id;
+
+	MenuItem(std::string text, int16_t id) : text(text), id(id) {}
 };
 
 class ConsoleMenu
@@ -22,4 +24,6 @@ private:
 	// рисуем меню целиком
 	// добавляем пункты в меню
 	// показываем меню и возвращаем id выбранного пункта
+public:
+	void add_item(const std::string& text, int16_t id);
 };
