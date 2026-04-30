@@ -20,7 +20,10 @@ int main()
 {
 	// Сначала будет простенькое, но хорошее меню для пользователя
 	ConsoleMenu main_menu;
-	main_menu.add_item("=One=", 0);
+	main_menu.add_item("=One=", 1);
+	main_menu.add_item("=twO=", 2);
+	int16_t choice = main_menu.show();
+	std::cout << "\nYou chose item with ID: " << choice << std::endl;
 	
 
 	// Далее пользователь может выбрать необходимый пункт меню
